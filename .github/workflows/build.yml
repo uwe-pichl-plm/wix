@@ -12,6 +12,7 @@ on:
   workflow_dispatch:
 
 env:
+  OSMF_EULA_ACCEPTED: '1'
   DOTNET_NOLOGO: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
