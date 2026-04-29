@@ -69,6 +69,8 @@ jobs:
         shell: cmd
         run: ./src/build_official.cmd
         env:
+          WIX_ACCEPT_OSMF_EULA: "yes"
+          OSMF_EULA_ACCEPTED: '1'
           RuntimeTestsEnabled: true
           AZURE_CLIENT_ID: ${{ env.SignBuild == 'true' && secrets.WIX_SIGNING_CLIENTID || '' }}
           AZURE_TENANT_ID: ${{ env.SignBuild == 'true' && secrets.WIX_SIGNING_TENANTID || '' }}
