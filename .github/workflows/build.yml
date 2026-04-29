@@ -12,6 +12,7 @@ on:
   workflow_dispatch:
 
 env:
+  WIX_ACCEPT_OSMF_EULA: "yes"
   OSMF_EULA_ACCEPTED: '1'
   DOTNET_NOLOGO: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
